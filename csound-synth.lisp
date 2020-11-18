@@ -102,7 +102,7 @@
   :icon 'csound
   (if (get-pref-value :externals :csound-path)
       (let* ((RT-OUT (equal out :rt))
-             (out-format (string (or format (get-pref-value :audio :format))))
+             (out-format (string-downcase (or format (get-pref-value :audio :format))))
              (out-res resolution) ;;; no resolution will keep the output in float format
              (csout (if RT-OUT nil
                         (handle-new-file-exists
