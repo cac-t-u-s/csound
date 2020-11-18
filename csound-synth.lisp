@@ -94,7 +94,7 @@
         (om::maybe-clean-tmp-files)
         (and outpath (probe-file outpath)))
     
-    (om-beep-msg "ERROR: CSound exec not found! (check in OM/External preferences)"))
+    (om-beep-msg "ERROR: CSound exec not found! (check in External preferences)"))
   )
 
 
@@ -143,7 +143,7 @@
     
           (om::maybe-clean-tmp-files)
         (and outpath (probe-file outpath)))
-    (om-beep-msg "ERROR: CSound exec not found! (check in OM/External preferences)")))
+    (om-beep-msg "ERROR: CSound exec not found! (check in External preferences)")))
 
 
 (defmethod! csound-synth ((orc t) (sco t) &key out format resolution)
